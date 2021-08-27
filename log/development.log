@@ -1,0 +1,364 @@
+  [1m[35m (62.6ms)[0m  [1m[35mCREATE DATABASE "sample_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (34.4ms)[0m  [1m[35mCREATE DATABASE "sample_app_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-08-26 19:12:43 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1800)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 2293.3ms | Allocations: 17598)
+Completed 500 Internal Server Error in 3750ms (ActiveRecord: 0.0ms | Allocations: 24311)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/andrei/Baymax/workshop/test/task1/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+    11:     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    12: 
+    13:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    15:   </head>
+    16: 
+    17:   <body>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2021-08-26 19:14:03 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1695)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/andrei/Baymax/workshop/test/task1/public/packs
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 1260ms
+Built at: 08/26/2021 7:14:07 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2760.0ms | Allocations: 8663)
+Completed 200 OK in 4234ms (Views: 2765.4ms | ActiveRecord: 0.0ms | Allocations: 14401)
+
+
+Started GET "/?page=2" for ::1 at 2021-08-26 19:15:26 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1086)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4078)
+Completed 200 OK in 1551ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 7447)
+
+
+Started GET "/posts/24" for ::1 at 2021-08-26 19:15:33 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"24"}
+Started GET "/posts/31" for ::1 at 2021-08-26 19:15:36 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"31"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 483)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3349)
+Completed 200 OK in 3565ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 10233)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3042)
+Completed 200 OK in 3426ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 11707)
+
+
+Started GET "/" for ::1 at 2021-08-26 19:15:49 +0300
+Processing by PostsController#index as HTML
+Started GET "/posts/10" for ::1 at 2021-08-26 19:15:51 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1045)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3919)
+Completed 200 OK in 2615ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 10396)
+
+
+Started GET "/posts/12" for ::1 at 2021-08-26 19:15:54 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3044)
+Completed 200 OK in 3378ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 16200)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3040)
+Completed 200 OK in 3562ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 11241)
+
+
+Started GET "/" for ::1 at 2021-08-26 19:26:17 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1045)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3909)
+Completed 200 OK in 1462ms (Views: 7.7ms | Allocations: 6097)
+
+
+Started GET "/" for ::1 at 2021-08-26 19:32:31 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1045)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3919)
+Completed 200 OK in 2299ms (Views: 7.9ms | Allocations: 6132)
+
+
+Started GET "/?page=2" for ::1 at 2021-08-26 19:37:34 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1053)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3917)
+Completed 200 OK in 1442ms (Views: 6.2ms | Allocations: 7038)
+
+
+Started GET "/?page=3" for ::1 at 2021-08-26 19:38:00 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3913)
+Completed 200 OK in 1475ms (Views: 12.3ms | Allocations: 7031)
+
+
+Started GET "/?page=4" for ::1 at 2021-08-26 19:49:05 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1056)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3930)
+Completed 200 OK in 1491ms (Views: 11.7ms | Allocations: 7099)
+
+
+Started GET "/?page=5" for ::1 at 2021-08-26 19:49:11 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3923)
+Completed 200 OK in 1497ms (Views: 12.5ms | Allocations: 7055)
+
+
+Started GET "/posts/97" for ::1 at 2021-08-26 19:50:51 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"97"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3041)
+Completed 200 OK in 3347ms (Views: 4.8ms | Allocations: 6436)
+
+
+Started GET "/?page=4" for ::1 at 2021-08-26 19:51:02 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1055)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3921)
+Completed 200 OK in 1514ms (Views: 6.5ms | Allocations: 7030)
+
+
+Started GET "/?page=1" for ::1 at 2021-08-26 19:51:05 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1045)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3909)
+Completed 200 OK in 2044ms (Views: 7.2ms | Allocations: 7031)
+
+
+Started GET "/?page=2" for ::1 at 2021-08-26 19:58:25 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1053)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3927)
+Completed 200 OK in 1303ms (Views: 11.5ms | Allocations: 7057)
+
+
+Started GET "/?page=3" for ::1 at 2021-08-26 19:58:30 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3913)
+Completed 200 OK in 1334ms (Views: 5.7ms | Allocations: 7031)
+
+
+Started GET "/" for ::1 at 2021-08-27 09:15:56 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1798)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.7ms | Allocations: 14084)
+Completed 200 OK in 1978ms (Views: 86.7ms | ActiveRecord: 0.0ms | Allocations: 19846)
+
+
+Started GET "/" for ::1 at 2021-08-27 09:15:58 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1154)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 4081)
+Completed 200 OK in 1867ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 10081)
+
+
+Started GET "/?page=2" for ::1 at 2021-08-27 09:16:10 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 4152)
+Completed 200 OK in 1972ms (Views: 37.0ms | ActiveRecord: 0.0ms | Allocations: 7552)
+
+
+Started GET "/?page=1" for ::1 at 2021-08-27 09:16:15 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3993)
+Completed 200 OK in 1775ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 7152)
+
+
+Started GET "/" for ::1 at 2021-08-27 09:16:22 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3987)
+Completed 200 OK in 1954ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 6185)
+
+
+Started GET "/" for ::1 at 2021-08-27 09:17:05 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1798)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 7453)
+Completed 200 OK in 2028ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 13311)
+
+
+Started GET "/posts/5" for ::1 at 2021-08-27 09:17:13 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 527)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3519)
+Completed 200 OK in 3901ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 7328)
+
+
+Started GET "/" for ::1 at 2021-08-27 09:17:20 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3992)
+Completed 200 OK in 1778ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 7112)
+
+
+Started GET "/?page=5" for ::1 at 2021-08-27 09:20:24 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3998)
+Completed 200 OK in 1885ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6339)
+
+
+Started GET "/posts/91" for ::1 at 2021-08-27 09:20:28 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"91"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3044)
+Completed 200 OK in 3826ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 6498)
+
+
+Started GET "/" for ::1 at 2021-08-27 09:20:36 +0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3987)
+Completed 200 OK in 1869ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 7129)
+
+
