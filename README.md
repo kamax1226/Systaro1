@@ -1,24 +1,26 @@
-# README
+# Task 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+Build a web project using any framework (i.e. AngularJS, Grails, Rails, Symphony), connecting to and using this public [REST-api](https://jsonplaceholder.typicode.com/), displaying POSTS (with pagination, 20 per page) and for each post a list of COMMENTS.
 
-* Ruby version
+## Setup Environment
 
-* System dependencies
+### Node
+- Ideal node version is 14.16.0
+- Ideal yarn version is 1.22.5
 
-* Configuration
+### Ruby and ROR
+- Ideal ruby version is 3.0.2
+- Ideal rails version is 6.1.3.2
 
-* Database creation
+### Database
+- Install mysql or postgresql on your computer
 
-* Database initialization
+## Running commands
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle install
+rails db:create
+rails server
+```
